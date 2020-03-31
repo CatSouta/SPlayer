@@ -1,2 +1,31 @@
 # SPlayer
-â–¶ä¸€æ¬¾ç®€å•çš„æ–¹å—éŸ³ä¹æ’­æ”¾å™¨
+
+Ò»¿î¼òµ¥µÄ·½¿éÒôÀÖ²¥·ÅÆ÷£¨ÍøÒ×ÔÆÒôÀÖ½âÎö£©
+
+ > ÍÛÈû£¡ÕâÃ´°ôµÄHTML5ÒôÀÖ²¥·ÅÆ÷£¡
+
+<a href="https://github.com/SatoSouta/SPlayer/releases/latest"><img src="https://img.shields.io/github/v/release/satosouta/SPlayer?color=%2342b983&style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/s-player"><img src="https://img.shields.io/npm/v/s-player.svg?style=for-the-badge"></a>
+
+## ¼ò½é
+
+<img src="https://ae01.alicdn.com/kf/He80bcdd2ecc64a0890480c5848fee12bW.png">
+
+SPlayer ÊÇÒ»¿îHTML5·½¿éĞÎÒôÀÖ²¥·ÅÆ÷£¬Ö§³Ö³£¼ûµÄÒôÀÖÎÄ¼şÀàĞÍ£¨mp3,wav,flacµÈ£©
+
+## ÌØµã
+
+ - Ğ¡ÇÉ£º·½¿éĞÎ£¬Õ¼Î»Ğ¡¡£
+ - Ò×ÓÃ£º¶Ô½ÓÍøÒ×ÔÆÒôÀÖ£¬Ö±½Ó»ñÈ¡ÒôÀÖ¡£
+
+## ¼ÓÈëÌÖÂÛ
+
+ - QQÈº£º[1040225813](https://shang.qq.com/wpa/qunwpa?idkey=fb30524582f88ffc33bcb0da8734a91c877694984794f6cb7f87a3d1269eaecf)
+
+## ¸ĞĞ»
+
+ - [@Ohmyga233](https://github.com/ohmyga233)
+
+## °æÈ¨
+
+Copyright  2020 [Ğ¡Ì«](https://713.moe/) & [SPlayer](https://splayer.js.org/), under MIT License
