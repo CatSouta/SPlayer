@@ -5,7 +5,7 @@
  > 哇塞！这么棒的HTML5音乐播放器！
 
 <a href="https://github.com/SatoSouta/SPlayer/releases/latest"><img src="https://img.shields.io/github/v/release/satosouta/SPlayer?color=%2342b983&style=for-the-badge"></a>
-<a href="https://www.npmjs.com/package/s-player"><img src="https://img.shields.io/npm/v/s-player.svg?style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/shotaplayer"><img src="https://img.shields.io/npm/v/shotaplayer.svg?style=for-the-badge"></a>
 
 ## 简介
 
