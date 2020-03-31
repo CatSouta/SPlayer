@@ -9,6 +9,12 @@ jsDelivr：
 <script src="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer/dist/SPlayer.min.js"></script>
 ```
 
+unpkg：
+```html
+<link rel="stylesheet" href="//unpkg.com/squplayer/dist/SPlayer.min.css" />
+<script src="//unpkg.com/squplayer/dist/SPlayer.min.js"></script>
+```
+
 ## 使用
 
 在需要使用播放器的地方插入代码：
