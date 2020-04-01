@@ -9,7 +9,7 @@
                                 |___/               
  ----------------------------------------------------
  * SPlayer's CSS
- * Last Update: 2020/03/31 [0.2.0]
+ * Last Update: 2020/03/31 [0.2.1]
  * Author: 小太 (https://713.moe/)
  * GitHub: https://github.com/SatoSouta/SPlayer
  * LICENSE: MIT License
@@ -42,10 +42,11 @@
 	color: #fff;
 	transition: all 0.3s;
 }
-#splayer #black p {
+#splayer #black marquee {
 	position: absolute;
-	top: -10px;
+	top: 5px;
 	left: 8px;
+	width: 112px;
 	opacity: 0.8;
 	overflow: hidden;
 	user-select: text;

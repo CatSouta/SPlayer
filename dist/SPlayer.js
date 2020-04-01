@@ -9,7 +9,7 @@
                                 |___/               
  ----------------------------------------------------
  * SPlayer's JavaScript
- * Last Update: 2020/03/31 [0.2.0]
+ * Last Update: 2020/03/31 [0.2.1]
  * Author: 小太 (https://713.moe/)
  * GitHub: https://github.com/SatoSouta/SPlayer
  * LICENSE: MIT License
@@ -18,7 +18,7 @@ var content = document.getElementById('splayer');
 window.content.innerHTML = '<audio id="audio" src=""></audio>\n' +
 						   '<div id="cover" style="background-image: url()">\n' +
 						   '<div id="black">\n' +
-						   '<p id="title">Loading...</p><span id="artist">Loading...</span>\n' +
+						   '<marquee id="title" onMouseOut="this.start()" onMouseOver="this.stop()" behavior="alternate" scrollamount="3">Laoding...</marquee><span id="artist">Loading...</span>\n' +
 						   '</div>\n' +
 						   '</div>\n' +
 						   '<div id="btn_play" onclick="m.play();"></div>\n' +
@@ -70,8 +70,11 @@ function hide() {
 function show() {
 	clearTimeout(timeout);
 	timeout2 = setTimeout(function(){
-		play.style.display = 'block';
-		pause.style.display = 'none';
+		black.style.opacity = '1';
+		pause.style.top = '53px';
+		pause.style.left = "53px";
+		play.style.top = '53px';
+		play.style.left = "53px";
 	},300);
 }
 audio.addEventListener('play', function () {  
@@ -80,12 +83,9 @@ audio.addEventListener('play', function () {
 	hide();
 }, false);
 audio.addEventListener('pause', function () {  
+	play.style.display = 'block';
+	pause.style.display = 'none';
 	show();
-	pause.style.top = '53px';
-	pause.style.left = "53px";
-	play.style.top = '53px';
-	play.style.left = "53px";
-	black.style.opacity = '1';
 }, false);
 audio.addEventListener('ended', function () {  
 	show();
