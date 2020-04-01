@@ -4,7 +4,7 @@
 
 ## Demonstration
 
-<iframe src="https://s-sh-1012-splayer.oss.dogecdn.com/example/"></iframe>
+<iframe src="https://splayer.js.org/example.html"></iframe>
 
 ## Thank
  
