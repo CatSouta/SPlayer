@@ -4,11 +4,17 @@
 
 ## 演示
 
-<iframe src="https://713.moe/SPlayer/"></iframe>
+<iframe src="https://s-sh-1012-splayer.oss.dogecdn.com/example/"></iframe>
 
 ## 感谢
+ 
+ - [@metowolf](https://github.com/metowolf)
+ 
+ - [@ohmyga233](https://github.com/ohmyga233)
+ 
+## 加入讨论
 
- - [@Ohmyga233](https://github.com/ohmyga233)
+ - QQ群：[1040225813](https://shang.qq.com/wpa/qunwpa?idkey=fb30524582f88ffc33bcb0da8734a91c877694984794f6cb7f87a3d1269eaecf)
 
 ## 版权
 

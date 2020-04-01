@@ -24,7 +24,9 @@ SPlayer 是一款HTML5方块形音乐播放器，支持常见的音乐文件类型（mp3,wav,flac等）
 
 ## 感谢
 
- - [@Ohmyga233](https://github.com/ohmyga233)
+ - [@metowolf](https://github.com/metowolf)
+
+ - [@ohmyga233](https://github.com/ohmyga233)
 
 ## 版权
 
