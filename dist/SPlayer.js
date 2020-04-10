@@ -9,11 +9,12 @@
                                 |___/               
  ----------------------------------------------------
  * SPlayer's JavaScript
- * Last Update: 2020/03/31 [0.2.1]
+ * Last Update: 2020/03/31 [0.2.2]
  * Author: 小太 (https://713.moe/)
  * GitHub: https://github.com/SatoSouta/SPlayer
  * LICENSE: MIT License
  **/
+var SPlayer_Version = '0.2.2';
 var content = document.getElementById('splayer');
 window.content.innerHTML = '<audio id="audio" src=""></audio>\n' +
 						   '<div id="cover" style="background-image: url()">\n' +
@@ -26,6 +27,7 @@ window.content.innerHTML = '<audio id="audio" src=""></audio>\n' +
 var id = document.getElementById("splayer").getAttribute("netease");
 var type = document.getElementById("splayer").getAttribute("type");
 var server = document.getElementById("splayer").getAttribute("server");
+var auto = document.getElementById("splayer").getAttribute("autoplay");
 var m = document.getElementById('audio');
 var play = document.getElementById('btn_play');
 var pause = document.getElementById('btn_pause');
@@ -55,6 +57,9 @@ if(server == '2'){
 		window.link.src = i.link;
 	});
 }
+if(auto == 'true'){
+	window.m.autoplay = 'true';
+}
 window.m.load();
 var timeout,timeout2,repeat;
 function hide() {
@@ -75,7 +80,7 @@ function show() {
 		pause.style.left = "53px";
 		play.style.top = '53px';
 		play.style.left = "53px";
-	},300);
+	},100);
 }
 audio.addEventListener('play', function () {  
 	play.style.display = 'none';
@@ -95,3 +100,4 @@ audio.addEventListener('ended', function () {
 	play.style.left = "53px";
 	black.style.opacity = '1';
 }, false);
+console.log('\n' + ' %c SPlayer v' + SPlayer_Version + ' %c http://splayer.js.org ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
