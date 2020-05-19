@@ -9,12 +9,12 @@
                                 |___/               
  ----------------------------------------------------
  * SPlayer's JavaScript
- * Last Update: 2020/03/31 [0.2.2]
+ * Last Update: 2020/03/31 [0.2.3]
  * Author: 小太 (https://713.moe/)
  * GitHub: https://github.com/SatoSouta/SPlayer
  * LICENSE: MIT License
  **/
-var SPlayer_Version = '0.2.2';
+var SPlayer_Version = '0.2.3';
 var content = document.getElementById('splayer');
 window.content.innerHTML = '<audio id="audio" src=""></audio>\n' +
 						   '<div id="cover" style="background-image: url()">\n' +
@@ -41,9 +41,9 @@ if(server == '1' || server == null){
 		return res.json();
 	}).then((i) => {
 		i = i[0];
-		window.title.innerHTML = i.name;
-		window.artist.innerHTML = i.artist;
-		window.cover.style = 'background-image: url('+i.cover+')';
+		window.title.innerHTML = i.title;
+		window.artist.innerHTML = i.author;
+		window.cover.style = 'background-image: url('+i.pic+')';
 		window.link.src = i.url;
 	});
 }
@@ -55,6 +55,26 @@ if(server == '2'){
 		window.artist.innerHTML = i.artist;
 		window.cover.style = 'background-image: url('+i.cover+')';
 		window.link.src = i.link;
+	});
+}
+if(server == '3'){
+	fetch("https://api.9jojo.cn/netease/?type=song&id="+id+"").then((res) => {
+		return res.json();
+	}).then((i) => {
+		window.title.innerHTML = i.title;
+		window.artist.innerHTML = i.artist;
+		window.cover.style = 'background-image: url('+i.cover+')';
+		window.link.src = i.url;
+	});
+}
+if(server == '4'){
+	fetch("https://api.fczbl.vip/163/?type=single&id="+id+"").then((res) => {
+		return res.json();
+	}).then((i) => {
+		window.title.innerHTML = i.name;
+		window.artist.innerHTML = i.artist;
+		window.cover.style = 'background-image: url('+i.cover+')';
+		window.link.src = i.url;
 	});
 }
 if(auto == 'true'){
