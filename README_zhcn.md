@@ -1,33 +1,35 @@
 # SPlayer
 
-Ò»¿î¼òµ¥µÄ·½¿éÒôÀÖ²¥·ÅÆ÷£¨ÍøÒ×ÔÆÒôÀÖ½âÎö£©
+ä¸€æ¬¾ç®€å•çš„æ–¹å—éŸ³ä¹æ’­æ”¾å™¨ï¼ˆç½‘æ˜“äº‘éŸ³ä¹è§£æï¼‰
 
- > ÍÛÈû£¡ÕâÃ´°ôµÄHTML5ÒôÀÖ²¥·ÅÆ÷£¡
+ > å“‡å¡ï¼è¿™ä¹ˆæ£’çš„HTML5éŸ³ä¹æ’­æ”¾å™¨ï¼
 
 <a href="https://github.com/SatoSouta/SPlayer/releases/latest"><img src="https://img.shields.io/github/v/release/satosouta/SPlayer?color=%2342b983&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/squplayer"><img src="https://img.shields.io/npm/v/squplayer.svg?style=for-the-badge"></a>
 
-## ¼ò½é
+## ç®€ä»‹
 
 <img src="https://ae01.alicdn.com/kf/He80bcdd2ecc64a0890480c5848fee12bW.png">
 
-SPlayer ÊÇÒ»¿îHTML5·½¿éĞÎÒôÀÖ²¥·ÅÆ÷£¬Ö§³Ö³£¼ûµÄÒôÀÖÎÄ¼şÀàĞÍ£¨mp3,wav,flacµÈ£©
+SPlayer æ˜¯ä¸€æ¬¾HTML5æ–¹å—å½¢éŸ³ä¹æ’­æ”¾å™¨ï¼Œæ”¯æŒå¸¸è§çš„éŸ³ä¹æ–‡ä»¶ç±»å‹ï¼ˆmp3,wav,flacç­‰ï¼‰
 
-## ÌØµã
+## ç‰¹ç‚¹
 
- - Ğ¡ÇÉ£º·½¿éĞÎ£¬Õ¼Î»Ğ¡¡£
- - Ò×ÓÃ£º¶Ô½ÓÍøÒ×ÔÆÒôÀÖ£¬Ö±½Ó»ñÈ¡ÒôÀÖ¡£
+ - å°å·§ï¼šæ–¹å—å½¢ï¼Œå ä½å°ã€‚
+ - æ˜“ç”¨ï¼šå¯¹æ¥ç½‘æ˜“äº‘éŸ³ä¹ï¼Œç›´æ¥è·å–éŸ³ä¹ã€‚
 
-## ¼ÓÈëÌÖÂÛ
+## åŠ å…¥è®¨è®º
 
- - QQÈº£º[1040225813](https://shang.qq.com/wpa/qunwpa?idkey=fb30524582f88ffc33bcb0da8734a91c877694984794f6cb7f87a3d1269eaecf)
+ - QQç¾¤ï¼š[1040225813](https://shang.qq.com/wpa/qunwpa?idkey=fb30524582f88ffc33bcb0da8734a91c877694984794f6cb7f87a3d1269eaecf)
 
-## ¸ĞĞ»
+## æ„Ÿè°¢
 
  - [@metowolf](https://github.com/metowolf)
 
  - [@ohmyga233](https://github.com/ohmyga233)
+ 
+ - [@xb2016](https://github.com/xb2016)
 
-## °æÈ¨
+## ç‰ˆæƒ
 
-Copyright  2020 [Ğ¡Ì«](https://713.moe/) & [SPlayer](https://splayer.js.org/), under MIT License
+Copyright  2020 [å°å¤ª](https://713.moe/) & [SPlayer](https://splayer.js.org/), under MIT License
