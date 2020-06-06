@@ -1,8 +1,8 @@
 # SPlayer
 
-> 🍭一款简单的方块音乐播放器（网易云音乐解析）
+> 🍭 A lovely square HTML5 music player
 
-* 小巧 / 简单 / 易用
+* Mini / Easy / Music analysis
 
 [GitHub](https://github.com/SatoSouta/SPlayer)
-[Get Started](#演示)
+[Get Started](#quick-start)

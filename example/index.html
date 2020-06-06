@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>SPlayer - 演示</title>
-		<link rel="stylesheet" href="../dist/SPlayer.min.css" />
-	</head>
-	<body>
-		<div id="splayer" server="2" netease="608669"></div>
-		<script src="../dist/SPlayer.min.js"></script>
-	</body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example</title>
+	<link rel="stylesheet" href="../dist/SPlayer.min.css">
+</head>
+
+<body>
+	<div id="test"></div>
+	<div id="test2"></div>
+	<div id="test3"></div>
+	<div id="test4"></div>
+	<div id="test5"></div>
+	<div id="test6"></div>
+	<script src="../dist/SPlayer.min.js"></script>
+	<script>
+		var sp = new SPlayer({
+			container: "test",
+			get: {
+				server: "netease",
+				api: 1,
+				id: 443875281
+			}
+		});
+		var sp2 = new SPlayer({
+			container: "test2",
+			get: {
+				server: "netease",
+				api: 2,
+				id: 406716925
+			}
+		});
+		var sp3 = new SPlayer({
+			container: "test3",
+			get: {
+				server: "netease",
+				api: 3,
+				id: 41643019
+			}
+		});
+		var sp4 = new SPlayer({
+			container: "test4",
+			get: {
+				server: "netease",
+				api: 4,
+				id: 1367333216
+			}
+		});
+		var sp5 = new SPlayer({
+			container: "test5",
+			get: {
+				server: "tencent",
+				id: "001eZJB14ALyBx"
+			}
+		});
+		var sp6 = new SPlayer({
+			container: "test6",
+			audio: {
+				title: "REMEMBER",
+				artist: "泽野弘之",
+				cover: "https://s0.9jojo.cn/dfs/image/c092731f3640979f610bd436e56a3e1c.jpg",
+				url: "https://s0.9jojo.cn/dfs/audio/4823d94c4eb6a040381c470de75a8741.mp3"
+			}
+		});
+	</script>
+</body>
+
 </html>

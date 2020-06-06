@@ -9,9 +9,9 @@ A simple box music player (Netease cloud music analysis)
 
 ## Introduction
 
-<img src="https://ae01.alicdn.com/kf/He80bcdd2ecc64a0890480c5848fee12bW.png">
+<img src="https://ae01.alicdn.com/kf/H602557a0933e43459713f3791f9b0ffeJ.jpg">
 
-Splayer is a HTML5 square music player, which supports common music file types (MP3, WAV, FLAC, etc.)
+SPlayer is a HTML5 square music player, which supports common music file types (MP3, WAV, FLAC, etc.)
 
 ## Characteristic
 
