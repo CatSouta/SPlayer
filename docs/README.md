@@ -96,7 +96,7 @@ It requires the library [hls.js](https://github.com/video-dev/hls.js) and it sho
 ```html
 <link rel="stylesheet" href="SPlayer.min.css">
 <div id="splayer"></div>
-<script src="hls.min.js">
+<script src="hls.min.js"></script>
 <script src="SPlayer.min.js"></script>
 ```
 
