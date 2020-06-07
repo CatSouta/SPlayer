@@ -41,7 +41,7 @@ npm install squplayer --save
 
 ```js
 var sp = new SPlayer({
-    container: "aplayer",
+    container: "splayer",
     get: {
         server: "netease",
         api: 1,
@@ -102,7 +102,7 @@ It requires the library [hls.js](https://github.com/video-dev/hls.js) and it sho
 
 ```js
 var sp = new SPlayer({
-    container: "aplayer",
+    container: "splayer",
     get: {
         server: "netease",
         api: 1,
