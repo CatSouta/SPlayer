@@ -1,71 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Example</title>
-	<link rel="stylesheet" href="../dist/SPlayer.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link rel="stylesheet" href="../dist/SPlayer.min.css">
 </head>
 
 <body>
-	<div id="test"></div>
-	<div id="test2"></div>
-	<div id="test3"></div>
-	<div id="test4"></div>
-	<div id="test5"></div>
-	<div id="test6"></div>
-	<script src="../dist/SPlayer.min.js"></script>
-	<script>
-		var sp = new SPlayer({
-			container: "test",
-			get: {
-				server: "netease",
-				api: 1,
-				id: 443875281
-			}
-		});
-		var sp2 = new SPlayer({
-			container: "test2",
-			get: {
-				server: "netease",
-				api: 2,
-				id: 406716925
-			}
-		});
-		var sp3 = new SPlayer({
-			container: "test3",
-			get: {
-				server: "netease",
-				api: 3,
-				id: 41643019
-			}
-		});
-		var sp4 = new SPlayer({
-			container: "test4",
-			get: {
-				server: "netease",
-				api: 4,
-				id: 1367333216
-			}
-		});
-		var sp5 = new SPlayer({
-			container: "test5",
-			get: {
-				server: "tencent",
-				id: "001eZJB14ALyBx"
-			}
-		});
-		var sp6 = new SPlayer({
-			container: "test6",
-			audio: {
-				title: "REMEMBER",
-				artist: "泽野弘之",
-				cover: "https://s0.9jojo.cn/dfs/image/86646e2b5721ff5d18aff069d5ad6773.jpg",
-				url: "https://s0.9jojo.cn/dfs/audio/0b72b4d4ea7e6fc5dc6c55d4dbadf695.mp3"
-			}
-		});
-	</script>
+  <div id="test"></div>
+  <div id="test2"></div>
+  <div id="test3"></div>
+  <div id="test4"></div>
+  <div id="test5"></div>
+  <div id="test6"></div>
+  <script src="../dist/SPlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script>
+    var sp = new SPlayer({
+      container: "test",
+      get: {
+        server: "netease",
+        api: 1,
+        id: 443875281
+      }
+    });
+    var sp2 = new SPlayer({
+      container: "test2",
+      get: {
+        server: "netease",
+        api: 2,
+        id: 406716925
+      }
+    });
+    var sp3 = new SPlayer({
+      container: "test3",
+      get: {
+        server: "netease",
+        api: 3,
+        id: 41643019
+      }
+    });
+    var sp4 = new SPlayer({
+      container: "test4",
+      get: {
+        server: "netease",
+        api: 4,
+        id: 1367333216
+      }
+    });
+    var sp5 = new SPlayer({
+      container: "test5",
+      get: {
+        server: "tencent",
+        id: "001eZJB14ALyBx"
+      }
+    });
+    var time = parseInt(new Date().getTime()/1000);
+    $.ajax({
+      url: "https://api.bbstr.net/sfs/get",
+      method: "POST",
+      dataType: "json",
+      data: {
+        "uri": "/image/86646e2b5721ff5d18aff069d5ad6773.jpg",
+        "time": time
+      },
+      success: function(res){
+        var cover = res["data"]["url"];
+        $.ajax({
+          url: "https://api.bbstr.net/sfs/get",
+          method: "POST",
+          dataType: "json",
+          data: {
+            "uri": "/audio/0b72b4d4ea7e6fc5dc6c55d4dbadf695.mp3",
+            "time": time
+          },
+          success: function(res){
+            var url = res["data"]["url"];
+            var sp6 = new SPlayer({
+              container: "test6",
+              audio: {
+                title: "REMEMBER",
+                artist: "泽野弘之",
+                cover: cover,
+                url: url
+              }
+            });
+          }
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
