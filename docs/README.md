@@ -116,15 +116,22 @@ var sp = new SPlayer({
 jsdelivr:
 
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer/dist/SPlayer.min.css">
-<script src="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer/dist/SPlayer.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@1.0.0/dist/SPlayer.min.css">
+<script src="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@1.0.0/dist/SPlayer.min.js"></script>
+```
+
+9jojo:
+
+```html
+<link rel="stylesheet" href="//cdn.9jojo.cn/SPlayer/1.0.0/SPlayer.min.css">
+<script src="//cdn.9jojo.cn/SPlayer/1.0.0/SPlayer.min.js"></script>
 ```
 
 unpkg:
 
 ```html
-<link rel="stylesheet" href="//unpkg.com/squplayer/dist/SPlayer.min.css">
-<script src="//unpkg.com/squplayer/dist/SPlayer.min.js"></script>
+<link rel="stylesheet" href="//unpkg.com/squplayer@1.0.0/dist/SPlayer.min.css">
+<script src="//unpkg.com/squplayer@1.0.0/dist/SPlayer.min.js"></script>
 ```
 
 ## FAQ
