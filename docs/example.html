@@ -57,38 +57,13 @@
         id: "001eZJB14ALyBx"
       }
     });
-    var time = parseInt(new Date().getTime()/1000);
-    $.ajax({
-      url: "https://api.bbstr.net/sfs/get",
-      method: "POST",
-      dataType: "json",
-      data: {
-        "uri": "/image/86646e2b5721ff5d18aff069d5ad6773.jpg",
-        "time": time
-      },
-      success: function(res){
-        var cover = res["data"]["url"];
-        $.ajax({
-          url: "https://api.bbstr.net/sfs/get",
-          method: "POST",
-          dataType: "json",
-          data: {
-            "uri": "/audio/0b72b4d4ea7e6fc5dc6c55d4dbadf695.mp3",
-            "time": time
-          },
-          success: function(res){
-            var url = res["data"]["url"];
-            var sp6 = new SPlayer({
-              container: "test6",
-              audio: {
-                title: "REMEMBER",
-                artist: "泽野弘之",
-                cover: cover,
-                url: url
-              }
-            });
-          }
-        });
+    var sp6 = new SPlayer({
+      container: "test6",
+      audio: {
+        title: "REMEMBER",
+        artist: "泽野弘之",
+        cover: "https://s0.9jojo.cn/sfs/image/86646e2b5721ff5d18aff069d5ad6773.jpg",
+        url: "https://s0.9jojo.cn/sfs/audio/0b72b4d4ea7e6fc5dc6c55d4dbadf695.mp3"
       }
     });
   </script>
