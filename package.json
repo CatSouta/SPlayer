@@ -8,7 +8,8 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack ./src/index.js -o ./build/built.js --mode=development",
+    "build": "webpack ./src/index.js -o ./build/built.js --mode=production"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,16 @@
     "player"
   ],
   "author": "F_picacho",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/PicachoChina/SPlayer/issues"
   },
   "homepage": "https://github.com/PicachoChina/SPlayer#readme",
   "devDependencies": {
-    "webpack": "^4.46.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.71.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.3"
   }
