@@ -1,3 +1,3 @@
 import "./style/main.scss";
 
-console.log("hello world");
+console.log("12300000");

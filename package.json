@@ -8,7 +8,7 @@
     "example": "example"
   },
   "scripts": {
-    "dev": "webpack ./src/index.js -o ./build/bundle.js --mode=development",
+    "dev": "webpack-dev-server",
     "build": "webpack"
   },
   "repository": {
