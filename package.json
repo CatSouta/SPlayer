@@ -1,0 +1,26 @@
+{
+  "name": "splayer",
+  "version": "1.0.1",
+  "description": "一款好用易调用的H5音乐播放器",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PicachoChina/SPlayer.git"
+  },
+  "keywords": [
+    "player"
+  ],
+  "author": "F_picacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PicachoChina/SPlayer/issues"
+  },
+  "homepage": "https://github.com/PicachoChina/SPlayer#readme"
+}
