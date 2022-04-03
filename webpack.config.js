@@ -11,12 +11,19 @@ module.exports = {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loader: "url-loader",
+        options: {
+          limit: 8 * 1024,
+        },
+      },
     ],
   },
   devServer: {
-    contentBase:path.resolve(__dirname,'build'),
-    compress:false,
-    port:8080,
+    contentBase: path.resolve(__dirname, "build"),
+    compress: false,
+    port: 8080,
   },
   //production
   mode: "development",
