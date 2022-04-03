@@ -5,7 +5,12 @@
     <title>测试文件</title>
 </head>
 <body>
-    <h1>hello world</h1>
+<div id="playerContainer"></div>
 </body>
 <script src="./bundle.js"></script>
+<script>
+    const Player = new SPlayer()
+    // 在合适的时机将dom上树
+    Player.mount("#playerContainer")
+</script>
 </html>

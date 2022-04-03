@@ -16,7 +16,8 @@ module.exports = {
   devServer: {
     contentBase:path.resolve(__dirname,'build'),
     compress:false,
-    port:8080
+    port:8080,
   },
-  mode: "production",
+  //production
+  mode: "development",
 };
