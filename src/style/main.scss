@@ -1,6 +1,65 @@
-#playerContainer {
-  background: url("../img/recordImg.jpeg");
-  background-size: 100%;
-  width: 200px;
-  height: 200px;
+#Splayer {
+  width: 128px;
+  height: 128px;
+  border-radius: 8px;
+  display: inline-block;
+  background-size: cover !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+
+  .cover {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    .progressContainer {
+      position: absolute;
+      z-index: 0;
+      background: none;
+      height: 100%;
+      width: 100%;
+
+      &::-webkit-progress-bar {
+        background: none;
+        border-radius: 8px;
+      }
+
+      &::-webkit-progress-value {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+      }
+    }
+
+    .ctrlPanel {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      color: #efefef;
+
+      .b {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &:hover {
+    .cover {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }

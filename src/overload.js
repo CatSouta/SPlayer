@@ -12,7 +12,7 @@ let audioOptions = {
   title: "未知歌曲",
   artist: "未知艺术家",
   cover:
-    "https://img.zcool.cn/community/01fb46554be413000001bf72d2a25c.jpg@1280w_1l_2o_100sh.jpg",
+    "./img/recordImg.jpeg",
 };
 export default function (parameter) {
   if (
@@ -26,7 +26,7 @@ export default function (parameter) {
   }
   const title = parameter.title || "未知歌曲";
   const artist = parameter.artist || "未知艺术家";
-  const cover = parameter.cover || "https://img.zcool.cn/a.jpg";
+  const cover = parameter.cover || "https://s1.ax1x.com/2022/04/04/qH6idO.jpg";
   if (parameter.hasOwnProperty("url")) {
     if (parameter.url === "" || typeof parameter.url !== "string") {
       throw new Error("SPlayer.js:关键参数url缺省，请检查实例化参数！");

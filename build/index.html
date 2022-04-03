@@ -9,16 +9,13 @@
 </body>
 <script src="./bundle.js"></script>
 <script>
-    // const Player = new SPlayer()
-    // const Player = new SPlayer({url: "./mp3/a.mp3"})
-    // const Player = new SPlayer({loop: true})
-    const Player = new SPlayer({loop: true, autoplay: true}, {
+    const Player = new SPlayer({loop: false, autoplay: true}, {
         api: 1,
         artist: "樱萍Apple",
-        cover: "https://img.zcool.cn/a.jpg",
         id: 1379107099,
         server: "netease",
         title: "only my railgun",
+        cover: "https://pic1.zhimg.com/v2-884f2270e729305127abf4306e5b1b3c_r.jpg"
     })
     // 在合适的时机将dom上树
     Player.mount("#playerContainer")

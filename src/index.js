@@ -1,6 +1,7 @@
 // 全局入口
 import "./style/main.scss";
 import overload from "./overload";
+import createEle from "./createEle";
 
 const SPlayer = class SPlayer {
   constructor(options = {}, audioOptions = {}) {
@@ -12,11 +13,12 @@ const SPlayer = class SPlayer {
     this.audioOptions = overload(audioOptions).audioOptions;
   }
 
-  mount(select) {
+  mount(select, options = this.options, audioOptions = this.audioOptions) {
     // 虚拟节点上树
-    console.log(select);
-    console.log(this.options);
-    console.log(this.audioOptions);
+    if (typeof select !== "string" || select === "") {
+      throw new Error("SPlayer.js:挂载播放器失败 请检查select参数");
+    }
+    createEle(select, options, audioOptions);
   }
 };
 window.SPlayer = SPlayer;
