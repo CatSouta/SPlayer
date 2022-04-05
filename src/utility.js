@@ -7,4 +7,15 @@ function $(query) {
   return document.querySelector(query);
 }
 
-export { random, $ };
+function neglect(str, maxLange) {
+  if (str.length >= maxLange) {
+    console.log(11111111111111)
+    let newStr = str;
+    let Rep = new RegExp(`.{${maxLange}}`);
+    newStr = `${newStr.match(Rep)}...`;
+    return newStr;
+  }
+  return str;
+}
+
+export { random, $, neglect };

@@ -14,10 +14,11 @@ const patch = init([
   eventListenersModule,
 ]);
 
+const playerImg = require("./img/Player.png");
 export default function (select, options, audioOptions) {
   const dom = document.querySelector(select);
   const vnode = h(
-    "div#Splayer",
+    "div.Splayer",
     { style: { background: `url(${audioOptions.cover})` } },
     h("div.cover", [
       h("progress.progressContainer", {
@@ -29,7 +30,7 @@ export default function (select, options, audioOptions) {
           h("p.title", { style: { padding: "10px" } }, audioOptions.title)
         ),
         h("div.b", [
-          h("span", { style: { transform: "translateX(10px)" } }, "svg"),
+          h("img.ctrlBtn", { props: { src: `${playerImg.default}` } }),
           h("span", { style: { padding: "10px" } }, audioOptions.artist),
         ]),
       ]),
@@ -37,4 +38,5 @@ export default function (select, options, audioOptions) {
   );
   console.log(dom, options, audioOptions);
   patch(dom, vnode);
+  // 注册事件处理函数
 }

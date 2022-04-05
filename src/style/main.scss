@@ -1,10 +1,11 @@
-#Splayer {
+.Splayer {
   width: 128px;
   height: 128px;
   border-radius: 8px;
   display: inline-block;
   background-size: cover !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  user-select: none;
 
   .cover {
     height: 100%;
@@ -50,6 +51,13 @@
       .b {
         display: flex;
         justify-content: space-between;
+
+        .ctrlBtn {
+          width: 30px;
+          height: 30px;
+          padding-left: 10px;
+          cursor:pointer
+        }
       }
     }
   }

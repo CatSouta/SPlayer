@@ -12,10 +12,10 @@ module.exports = {
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
       {
-        test: /\.(jpg|png|gif|jpeg)$/,
-        loader: "url-loader",
+        test: /\.(png|jpg|gif|svg|jpeg)$/,
+        loader: "file-loader",
         options: {
-          limit: 8 * 1024,
+          name: "images/[name].[ext]",
         },
       },
     ],
