@@ -8,7 +8,7 @@ function $(query) {
 }
 
 function neglect(str, maxLange) {
-  if (str.length >= maxLange) {
+  if (str.length > maxLange) {
     console.log(11111111111111)
     let newStr = str;
     let Rep = new RegExp(`.{${maxLange}}`);

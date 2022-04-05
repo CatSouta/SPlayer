@@ -6,6 +6,7 @@ import {
   eventListenersModule,
   h,
 } from "snabbdom";
+import registerEvent from "./registerEvent";
 
 const patch = init([
   classModule,
@@ -21,6 +22,7 @@ export default function (select, options, audioOptions) {
     "div.Splayer",
     { style: { background: `url(${audioOptions.cover})` } },
     h("div.cover", [
+      h("audio.SPaudio"),
       h("progress.progressContainer", {
         props: { min: 0, max: 100, value: 25 },
       }),
@@ -38,5 +40,5 @@ export default function (select, options, audioOptions) {
   );
   console.log(dom, options, audioOptions);
   patch(dom, vnode);
-  // 注册事件处理函数
+  registerEvent();
 }
