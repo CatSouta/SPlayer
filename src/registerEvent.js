@@ -1,8 +1,16 @@
 // 注册事件
 import { $ } from "./utility";
+import playerImg from "./img/Player.png";
+import pauseImg from "./img/Pause.png";
 
 export default function () {
-  $(".Splayer .ctrlBtn").onclick = function () {
-    console.log("点击了播放按钮");
+  $(".ctrlBtn").onclick = function () {
+    if ($(".SPaudio").paused) {
+      $(".SPaudio").play();
+      $(".ctrlBtn").src = pauseImg;
+    } else {
+      $(".SPaudio").pause();
+      $(".ctrlBtn").src = playerImg;
+    }
   };
 }

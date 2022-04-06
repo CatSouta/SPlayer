@@ -8,6 +8,7 @@ import {
 } from "snabbdom";
 import registerEvent from "./registerEvent";
 import typeResolution from "./typeResolution";
+import { $ } from "./utility";
 
 const patch = init([
   classModule,
@@ -17,30 +18,34 @@ const patch = init([
 ]);
 
 const playerImg = require("./img/Player.png");
-export default function (select, options, audioOptions) {
-  const dom = document.querySelector(select);
-  const audioData = typeResolution(audioOptions);
+export default async function (select, options, audioOptions) {
+  const dom = $(select);
+  const audioData = await typeResolution(audioOptions);
   const vnode = h(
     "div.Splayer",
-    { style: { background: `url(${audioOptions.cover})` } },
+    { style: { background: `url(${audioData.cover})` } },
     h("div.cover", [
-      h("audio.SPaudio"),
+      h("audio.SPaudio", {
+        props: { src: `${audioData.url}`, autoplay: "autoplay" },
+      }),
       h("progress.progressContainer", {
         props: { min: 0, max: 100, value: 25 },
       }),
       h("div.ctrlPanel", [
         h(
           "div.t",
-          h("p.title", { style: { padding: "10px" } }, audioOptions.title)
+          h("p.title", { style: { padding: "10px" } }, audioData.title)
         ),
         h("div.b", [
           h("img.ctrlBtn", { props: { src: `${playerImg.default}` } }),
-          h("span", { style: { padding: "10px" } }, audioOptions.artist),
+          h("span", audioData.artist),
         ]),
       ]),
     ])
   );
+
   // console.log(dom, options, audioOptions);
   patch(dom, vnode);
+  console.log(audioData);
   registerEvent();
 }

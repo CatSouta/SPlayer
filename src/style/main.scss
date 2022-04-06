@@ -48,6 +48,19 @@
       height: 100%;
       color: #efefef;
 
+      .t {
+        .title {
+          display: block;
+          display: -webkit-box;
+          height: 25px;
+          margin: 0 auto;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
       .b {
         display: flex;
         justify-content: space-between;
@@ -56,7 +69,15 @@
           width: 30px;
           height: 30px;
           padding-left: 10px;
-          cursor:pointer
+          cursor: pointer;
+        }
+        span{
+          padding: 0 10px 0 0;
+          width: 35px;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
