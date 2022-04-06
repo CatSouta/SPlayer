@@ -28,19 +28,14 @@ export default async function (select, options, audioOptions) {
       h("audio.SPaudio", {
         props: { src: `${audioData.url}`, autoplay: "autoplay" },
       }),
-      h("progress.progressContainer", {
-        props: { min: 0, max: 100, value: 25 },
-      }),
-      h("div.ctrlPanel", [
-        h(
-          "div.t",
-          h("p.title", { style: { padding: "10px" } }, audioData.title)
-        ),
-        h("div.b", [
-          h("img.ctrlBtn", { props: { src: `${playerImg.default}` } }),
-          h("span", audioData.artist),
-        ]),
+      h("div.t", h("p.title", { style: { padding: "10px" } }, audioData.title)),
+      h("div.b", [
+        h("img.ctrlBtn", { props: { src: `${playerImg.default}` } }),
+        h("span", audioData.artist),
       ]),
+      h("progress.progressContainer", {
+        props: { min: 0, max: 100, value: 0 },
+      }),
     ])
   );
 

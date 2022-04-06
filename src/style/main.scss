@@ -33,52 +33,46 @@
       }
     }
 
-    .ctrlPanel {
-      * {
-        margin: 0;
-        padding: 0;
+    .t {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      color: #efefef;
+      .title {
+        display: block;
+        display: -webkit-box;
+        height: 25px;
+        margin: 0 auto;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
+    }
 
+    .b {
+      z-index: 1;
+      bottom: 5px;
       position: absolute;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      z-index: 1;
       width: 100%;
-      height: 100%;
       color: #efefef;
-
-      .t {
-        .title {
-          display: block;
-          display: -webkit-box;
-          height: 25px;
-          margin: 0 auto;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
+      .ctrlBtn {
+        width: 30px;
+        height: 30px;
+        padding-left: 10px;
+        cursor: pointer;
       }
 
-      .b {
-        display: flex;
-        justify-content: space-between;
-
-        .ctrlBtn {
-          width: 30px;
-          height: 30px;
-          padding-left: 10px;
-          cursor: pointer;
-        }
-        span{
-          padding: 0 10px 0 0;
-          width: 35px;
-          -webkit-line-clamp: 1;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
+      span {
+        right: 0;
+        padding: 0 10px 0 0;
+        width: 35px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
