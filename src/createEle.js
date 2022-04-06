@@ -7,6 +7,7 @@ import {
   h,
 } from "snabbdom";
 import registerEvent from "./registerEvent";
+import typeResolution from "./typeResolution";
 
 const patch = init([
   classModule,
@@ -18,6 +19,7 @@ const patch = init([
 const playerImg = require("./img/Player.png");
 export default function (select, options, audioOptions) {
   const dom = document.querySelector(select);
+  const audioData = typeResolution(audioOptions);
   const vnode = h(
     "div.Splayer",
     { style: { background: `url(${audioOptions.cover})` } },
@@ -38,7 +40,7 @@ export default function (select, options, audioOptions) {
       ]),
     ])
   );
-  console.log(dom, options, audioOptions);
+  // console.log(dom, options, audioOptions);
   patch(dom, vnode);
   registerEvent();
 }
