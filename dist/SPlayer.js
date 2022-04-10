@@ -28,7 +28,8 @@ function SPlayer(data) {
     main.style.display = "inline-block"; // 允许播放器并排显示
 
     /* 播放器构建 */
-    main.innerHTML = "<div class=\"splayer\" id=\"" + rand + "\">" +
+    main.innerHTML =
+        "<div class=\"splayer\" id=\"" + rand + "\">" +
         "<audio" + loop + " preload=\"auto\"></audio>" +
         "<div class=\"splayer-cover\" style=\"background-image: url();\"></div>" +
         "<div class=\"splayer-mask\" style=\"opacity: 1;\">" +
