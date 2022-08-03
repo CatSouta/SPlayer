@@ -9,8 +9,8 @@
                                 |___/
  ----------------------------------------------------
  * SPlayer's JS
- * Last Update: 2020/06/06 [1.0.0]
- * Author: 小太 (https://713.moe/)
+ * Last Update: 2022/08/03 [1.0.1]
+ * Author: 小太 (https://baka.fun/)
  * GitHub: https://github.com/SatoSouta/SPlayer
  * LICENSE: MIT License
  **/
@@ -40,7 +40,7 @@ function SPlayer(data) {
         "<div class=\"splayer-controller\">" +
         "<div class=\"splayer-btn splayer-play\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 16 31\"><path d=\"M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z\"></path></svg></div>" +
         "</div></div></div>";
-    
+
     /* 获取内部储存容器 */
     var div = document.getElementById(rand);
     var au = div.getElementsByTagName("audio")[0];
@@ -63,7 +63,7 @@ function SPlayer(data) {
         if (!data.get.server || data.get.server == "netease") {
             if (!data.get.api || data.get.api == 1) {
                 /* Shota's API */
-                fetch("https://api.9jojo.cn/netease/?type=song&id=" + data.get.id)
+                fetch("https://api.baka.fun/netease/?type=song&id=" + data.get.id)
                     .then(function (res) {
                         return res.json();
                     })
@@ -77,7 +77,7 @@ function SPlayer(data) {
                     });
             } else if (data.get.api == 2) {
                 /* O's API */
-                fetch("https://api.ohmyga.cn/netease/?type=song&id=" + data.get.id)
+                fetch("https://api.bakaomg.cn/v1/music/netease?use=1&encode=raw&type=song&id=" + data.get.id)
                     .then(function (res) {
                         return res.json();
                     })
@@ -87,23 +87,9 @@ function SPlayer(data) {
                         if (json.cover) {
                             cover.style = "background-image: url(" + json.cover + ");";
                         }
-                        au.src = json.link;
-                    });
-            } else if (data.get.api == 3) {
-                /* Dog's API */
-                fetch("https://api.fczbl.vip/163/?type=single&id=" + data.get.id)
-                    .then(function (res) {
-                        return res.json();
-                    })
-                    .then(function (json) {
-                        title.innerHTML = json.name;
-                        artist.innerHTML = json.artist;
-                        if (json.cover) {
-                            cover.style = "background-image: url(" + json.cover + ");";
-                        }
                         au.src = json.url;
                     });
-            } else if (data.get.api == 4) {
+            } else if (data.get.api == 3) {
                 /* Meto's API */
                 fetch("https://api.i-meto.com/meting/api?server=netease&type=song&id=" + data.get.id)
                     .then(function (res) {
@@ -119,7 +105,7 @@ function SPlayer(data) {
                         au.src = json.url;
                     });
             }
-        /* 使用腾讯 */
+            /* 使用腾讯 */
         } else if (data.get.server == "tencent") {
             /* Meto APi */
             fetch("https://api.i-meto.com/meting/api?server=tencent&type=song&id=" + data.get.id)
