@@ -4,9 +4,9 @@ export default async function (audioOptions) {
     case "netease":
       switch (audioOptions.api) {
         case 1:
-          return new Promise((resolve,reject) => {
+          return new Promise((resolve, reject) => {
             fetch(
-              `https://api.9jojo.cn/netease/?type=song&id=${audioOptions.id}`
+              `https://api.baka.fun/netease/?type=song&id=${audioOptions.id}`
             ).then((response) => {
               resolve(response.json());
             })
