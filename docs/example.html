@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Example</title>
-  <link rel="stylesheet" href="dist/SPlayer.min.css">
+  <link rel="stylesheet" href="../dist/SPlayer.min.css">
 </head>
 
 <body>
@@ -14,8 +14,7 @@
   <div id="test3"></div>
   <div id="test4"></div>
   <div id="test5"></div>
-  <div id="test6"></div>
-  <script src="dist/SPlayer.min.js"></script>
+  <script src="../dist/SPlayer.min.js"></script>
   <script>
     var sp = new SPlayer({
       container: "test",
@@ -44,25 +43,17 @@
     var sp4 = new SPlayer({
       container: "test4",
       get: {
-        server: "netease",
-        api: 4,
-        id: 1367333216
-      }
-    });
-    var sp5 = new SPlayer({
-      container: "test5",
-      get: {
         server: "tencent",
         id: "001eZJB14ALyBx"
       }
     });
-    var sp6 = new SPlayer({
-      container: "test6",
+    var sp5 = new SPlayer({
+      container: "test5",
       audio: {
         title: "REMEMBER",
         artist: "泽野弘之",
-        cover: "https://s0.9jojo.cn/sfs/image/86646e2b5721ff5d18aff069d5ad6773.jpg",
-        url: "https://s0.9jojo.cn/sfs/audio/0b72b4d4ea7e6fc5dc6c55d4dbadf695.mp3"
+        cover: "https://i0.stslb.cn/img/197f16f282af1079168f76232e913052.jpg",
+        url: "https://s0.stslb.cn/au/4823d94c4eb6a040381c470de75a8741.mp3"
       }
     });
   </script>
