@@ -28,8 +28,6 @@ SPlayer is a HTML5 square music player, which supports common music file types (
 
  - [@ohmyga233](https://github.com/ohmyga233)
 
- - [@xb2016](https://github.com/xb2016)
-
 ## Copyright
 
-Copyright  2020 [SatoSouta](https://713.moe/) & [SPlayer](https://splayer.js.org/), under MIT License
+Copyright 2020 [SatoSouta](https://baka.fun/) & [SPlayer](https://splayer.js.org/), under MIT License
