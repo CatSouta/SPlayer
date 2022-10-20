@@ -50,14 +50,6 @@ var sp = new SPlayer({
 });
 ```
 
-Work with module bundler:
-```js
-import "splayer/dist/SPlayer.min.css";
-import SPlayer from "splayer";
-
-const sp = new SPlayer(options);
-```
-
 ## Options
 
 Name|Default|Description
