@@ -11,8 +11,6 @@
  - [@metowolf](https://github.com/metowolf)
  
  - [@ohmyga233](https://github.com/ohmyga233)
-
- - [@xb2016](https://github.com/xb2016)
  
 ## Join in the discussion
 
@@ -20,7 +18,7 @@
 
 ## Copyright
 
-Copyright © 2020 [SatoSouta](https://713.moe/) & [SPlayer](https://splayer.js.org/), under MIT License
+Copyright © 2020 [SatoSouta](https://baka.fun/) & [SPlayer](https://splayer.js.org/), under MIT License
 
 ## Attention
 
@@ -35,18 +33,6 @@ jsDelivr:
 ```html
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@0.2.3/dist/SPlayer.min.css" />
 <script src="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@0.2.3/dist/SPlayer.min.js"></script>
-```
-
-9jojo:
-```html
-<link rel="stylesheet" href="//cdn.9jojo.cn/SPlayer/0.2.3/SPlayer.min.css" />
-<script src="//cdn.9jojo.cn/SPlayer/0.2.3/SPlayer.min.js"></script>
-```
-
-unpkg:
-```html
-<link rel="stylesheet" href="//unpkg.com/squplayer@0.2.3/dist/SPlayer.min.css" />
-<script src="//unpkg.com/squplayer@0.2.3/dist/SPlayer.min.js"></script>
 ```
 
 ## Use
