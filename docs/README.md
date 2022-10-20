@@ -8,7 +8,7 @@
 
 ## Thanks for the API
 
-[@ohmyga233](https://github.com/ohmyga233) & [@xb2016](https://github.com/xb2016) & [@metowolf](https://github.com/metowolf)
+[@ohmyga233](https://github.com/ohmyga233) & [@metowolf](https://github.com/metowolf)
 
 ## To do list
  - [x] Local Music Load
@@ -108,22 +108,8 @@ var sp = new SPlayer({
 jsdelivr:
 
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@1.0.0/dist/SPlayer.min.css">
-<script src="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@1.0.0/dist/SPlayer.min.js"></script>
-```
-
-9jojo:
-
-```html
-<link rel="stylesheet" href="//cdn.9jojo.cn/SPlayer/1.0.0/SPlayer.min.css">
-<script src="//cdn.9jojo.cn/SPlayer/1.0.0/SPlayer.min.js"></script>
-```
-
-unpkg:
-
-```html
-<link rel="stylesheet" href="//unpkg.com/squplayer@1.0.0/dist/SPlayer.min.css">
-<script src="//unpkg.com/squplayer@1.0.0/dist/SPlayer.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@latest/dist/SPlayer.min.css">
+<script src="//cdn.jsdelivr.net/gh/SatoSouta/SPlayer@latest/dist/SPlayer.min.js"></script>
 ```
 
 ## FAQ
@@ -134,7 +120,7 @@ Most mobile browsers forbid audio autoplay, you wont be able to achieve it witho
 
 ## Copyright
 
-Copyright © 2020 [SatoSouta](https://713.moe/) & [SPlayer](https://splayer.js.org/), under MIT License.
+Copyright © 2020 [SatoSouta](https://baka.fun/) & [SPlayer](https://splayer.js.org/), under MIT License.
 
 ## Notice
 
